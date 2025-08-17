@@ -1,0 +1,18 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="container py-3">
+            @Body
+        </div>
+    </main>
+</div>
+
+<style>
+.page { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; }
+.sidebar { background: #f8f9fa; border-right: 1px solid #e5e5e5; padding: 1rem; }
+</style>
